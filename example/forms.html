@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Forms - FfF BT4</title>
+    <link rel="stylesheet" href="../src/css/main.css">
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-gradient-primary">
+    <a class="navbar-brand" href="#">FFF</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-center" href="index.html">Cards</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-center" href="forms.html">Forms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-center" href="alerts.html">Alerts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-center" href="colors.html">Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-center" href="https://getbootstrap.com/docs/4.3/components/alerts/" target="_blank">more components</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+        <label class="custom-control-label" for="customCheck2">Check this custom checkbox 2</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline mt-4">
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" checked>
+        <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+    </div>
+    <div class="custom-control custom-switch mt-4">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+    </div>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch2">
+        <label class="custom-control-label" for="customSwitch2">Toggle this switch element</label>
+    </div>
+    <form class="mt-4">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary">Large</button>
+        <button type="submit" class="btn btn-primary">Normal</button>
+        <button type="submit" class="btn btn-sm btn-primary">Small</button>
+    </form>
+    <div class="mt-3">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">btn-primary</button>
+            <button type="button" class="btn btn-secondary">btn-secondary</button>
+            <button type="button" class="btn btn-info">btn-info</button>
+            <button type="button" class="btn btn-warning">btn-warning</button>
+            <button type="button" class="btn btn-danger">btn-danger</button>
+            <button type="button" class="btn btn-light">btn-light</button>
+            <button type="button" class="btn btn-dark">btn-dark</button>
+        </div>
+    </div>
+    <form class="mt-4">
+        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+        <input class="form-control" type="text" placeholder="Default input">
+        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+    </form>
+    <form class="mt-4">
+        <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
+    </form>
+    <form class="mt-4">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+    <div class="mt-3">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-info" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="mt-3">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="progress mt-3">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+    </div>
+</div>
+
+<nav class="navbar fixed-bottom navbar-dark bg-gradient-primary">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+            <a class="nav-link text-center" href="https://fridaysforfuture.de/" target="_blank">Fridays for Future Germany</a>
+        </li>
+    </ul>
+</nav>
+<script src="../src/js/main.js"></script>
+</body>
+</html>

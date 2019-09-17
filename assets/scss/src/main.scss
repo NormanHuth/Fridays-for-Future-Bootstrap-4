@@ -1,0 +1,33 @@
+@import "../variables";
+
+$theme-colors: (
+    primary: $fff-green
+);
+
+$link-color:                                $fff-green;
+$font-size-base:                            1rem;
+$h1-font-size:                              $font-size-base * 1.6;
+$h2-font-size:                              $font-size-base * 1.5;
+$h3-font-size:                              $font-size-base * 1.4;
+$h4-font-size:                              $font-size-base * 1.3;
+$h5-font-size:                              $font-size-base * 1.2;
+$h6-font-size:                              $font-size-base * 1.1;
+$custom-control-indicator-checked-bg:       $fff-green;
+$component-active-bg:                       $fff-green;
+$custom-select-indicator-color:             $fff-green;
+
+$card-border-color:                         $fff-green;
+$list-group-border-color:                   rgba($fff-green, .125);
+$modal-content-border-color:                rgba($fff-green, .125);
+
+$border-width:                              1px;
+$card-border-width:                         2px;
+
+$enable-gradients:                          true;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}

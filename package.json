@@ -1,0 +1,28 @@
+{
+  "name": "fridays-for-future-bootstrap-4",
+  "version": "1.0.0",
+  "description": "A SASS Bootstrap 4 Template for Fridays for Future",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuetzeOfficial/Fridays-for-Future-Bootstrap-4.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "DevelopersForFuture",
+    "FidaysForFuture"
+  ],
+  "author": "Norman Huth <contact@normanhuth.com> (https://normanhuth.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuetzeOfficial/Fridays-for-Future-Bootstrap-4/issues"
+  },
+  "homepage": "https://github.com/MuetzeOfficial/Fridays-for-Future-Bootstrap-4#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}

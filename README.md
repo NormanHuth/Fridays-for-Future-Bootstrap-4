@@ -1,2 +1,2 @@
 # Fridays-for-Future-Bootstrap-4
-A SCSS Bootstrap 4 Template for Fridays for Future
+A SASS Bootstrap 4 Template for Fridays for Future
