@@ -22,24 +22,7 @@
   },
   "homepage": "https://github.com/MuetzeOfficial/Fridays-for-Future-Bootstrap-4#readme",
   "dependencies": {
-    "autoprefixer": "^9.6.1",
     "bootstrap": "^4.3.1",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-cli": "^2.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-exec": "^3.0.2",
-    "gulp-imagemin": "^6.0.0",
-    "gulp-include": "^2.4.1",
-    "gulp-less": "^4.0.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-purifycss": "^0.2.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-terser": "^1.2.0",
-    "gulp-util": "^3.0.8",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.14.7",
-    "postcss-flexbugs-fixes": "^4.1.0",
-    "purify-css": "^1.2.6"
+    "jquery": "^3.4.1"
   }
 }
