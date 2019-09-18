@@ -18,7 +18,7 @@ $(document).ready(function() {
     const $root = $('html, body');
     $('a[href^="#"].anchor').click(function () {
         $root.animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top-60
+            scrollTop: $( $.attr(this, 'href') ).offset().top-80
         }, 800);
         return false;
     });
