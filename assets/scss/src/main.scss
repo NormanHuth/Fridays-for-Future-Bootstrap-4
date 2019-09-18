@@ -18,18 +18,28 @@ $custom-control-indicator-checked-bg:       $fff-green1;
 $component-active-bg:                       $fff-green1;
 $custom-select-indicator-color:             $fff-green1;
 $custom-select-indicator-color:             $fff-green2;
+/*
+Alternatives Forms
+$custom-control-indicator-checked-bg:           $white;
+$custom-control-indicator-checked-color:        $fff-green1;
+$custom-control-indicator-checked-border-color: $gray-400;
+*/
 
 $card-border-color:                         $fff-green1;
 $list-group-border-color:                   rgba($fff-green1, .125);
 $modal-content-border-color:                rgba($fff-green1, .125);
 
-$border-width:                              1px;
 $card-border-width:                         3px;
 
 $enable-gradients:                          true;
 
 $hr-border-color:                           rgba($fff-green2, .75);
 $hr-border-width:                           2px;
+
+$modal-content-border-color:                rgba($fff-green2, .75);
+$modal-header-border-color:                 darken($fff-green2,75%);
+$modal-backdrop-bg:                         $fff-green2;
+$modal-backdrop-opacity:                    .7;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
@@ -99,3 +109,52 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
         }
     }
 }
+
+// Disable Spinners with class
+.no-spin {
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+        -moz-appearance: textfield !important;
+    }
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+        -moz-appearance: textfield !important;
+    }
+}
+
+// Custom Scrollbar (not all Browsers)
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: $gray-200;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba($fff-green2, .75);
+    border-left: 3px ridge  $gray-300;
+    border-right: 3px ridge  $gray-300;
+    &:hover {
+        background: $fff-green1;
+    }
+}
+
+/*
+Optional: Create Social Buttons:
+.btn-facebook {
+  @include button-variant($facebook, $facebook);
+}
+.btn-twitter {
+  @include button-variant($twitter, $twitter);
+}
+.btn-reddit {
+  @include button-variant($reddit, $reddit);
+}
+.btn-vk {
+  @include button-variant($vk, $vk);
+}
+.btn-instagram {
+  @include button-variant($instagram, $instagram);
+}
+*/
