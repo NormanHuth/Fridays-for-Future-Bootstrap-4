@@ -1,10 +1,10 @@
 @import "../variables";
 
 $theme-colors: (
-    primary: #1B7340
+    primary: $fff-green2
 );
 
-$link-color:                                $fff-green;
+$link-color:                                $fff-green1;
 $font-size-base:                            1rem;
 $h1-font-size:                              $font-size-base * 1.6;
 $h2-font-size:                              $font-size-base * 1.5;
@@ -12,22 +12,71 @@ $h3-font-size:                              $font-size-base * 1.4;
 $h4-font-size:                              $font-size-base * 1.3;
 $h5-font-size:                              $font-size-base * 1.2;
 $h6-font-size:                              $font-size-base * 1.1;
-$custom-control-indicator-checked-bg:       $fff-green;
-$component-active-bg:                       $fff-green;
-$custom-select-indicator-color:             $fff-green;
+$custom-control-indicator-checked-bg:       $fff-green1;
+$component-active-bg:                       $fff-green1;
+$custom-select-indicator-color:             $fff-green1;
 
-$card-border-color:                         $fff-green;
-$list-group-border-color:                   rgba($fff-green, .125);
-$modal-content-border-color:                rgba($fff-green, .125);
+$card-border-color:                         $fff-green1;
+$list-group-border-color:                   rgba($fff-green1, .125);
+$modal-content-border-color:                rgba($fff-green1, .125);
 
 $border-width:                              1px;
 $card-border-width:                         3px;
 
 $enable-gradients:                          true;
 
+$hr-border-color:                           rgba($fff-green2, .75);
+$hr-border-width:                           2px;
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
     margin-top: 5rem;
     margin-bottom: 7rem;
+}
+
+.sticky-bottom {
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-expand-sm {
+    @media (max-width: 576px) {
+        .navbar-collapse {
+            max-height: calc(100vh - 125px);
+            overflow-y: auto;
+        }
+    }
+}
+.navbar-expand-md {
+    @media (max-width: 768px) {
+        .navbar-collapse {
+            max-height: calc(100vh - 125px);
+            overflow-y: auto;
+        }
+    }
+}
+.navbar-expand-lg {
+    @media (max-width: 992px) {
+        .navbar-collapse {
+            max-height: calc(100vh - 125px);
+            overflow-y: auto;
+        }
+    }
+}
+.navbar-expand-xl {
+    @media (max-width: 1200px) {
+        .navbar-collapse {
+            max-height: calc(100vh - 125px);
+            overflow-y: auto;
+        }
+    }
 }
