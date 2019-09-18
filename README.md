@@ -7,7 +7,7 @@ https://muetzeofficial.github.io/Fridays-for-Future-Bootstrap-4/
 
 ###### You can find the Example site in the _docs_ folder
 #
-###### **Instruction for editing**
+###### Instruction for editing
 * Make sure you have Node.js installed. https://nodejs.org
 * run `npm install` (in console, cmd, Phpstorm etc)
 * The JS are located in the folder _assets/js/src_
