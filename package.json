@@ -1,6 +1,6 @@
 {
   "name": "fridays-for-future-bootstrap-4",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A SASS Bootstrap 4 Template for Fridays for Future",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/MuetzeOfficial/Fridays-for-Future-Bootstrap-4#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
     "bootstrap": "^4.3.1",
+    "bootstrap-select": "^1.13.10",
+    "datatables.net-bs4": "^1.10.19",
     "jquery": "^3.4.1"
   }
 }
