@@ -1,5 +1,5 @@
 # Fridays-for-Future-Bootstrap-4
-A SASS Bootstrap 4 Basic Template for Fridays for Future
+A SASS Bootstrap 4 Basic Template for Fridays for Future sites
 
 
 Example Site
