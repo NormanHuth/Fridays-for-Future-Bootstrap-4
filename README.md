@@ -1,4 +1,4 @@
-# Fridays for Future - BT 4
+# Fridays for Future - BT4
 A SASS Bootstrap 4 Basic Template for Fridays for Future sites
 
 
