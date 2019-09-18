@@ -29,6 +29,10 @@ https://fontawesome.com/
 DataTables BT-4 1.10.19  
 https://github.com/DataTables/Dist-DataTables  
 https://datatables.net/
+
+Bootstrap-Select 1.13.10
+https://github.com/snapappointments/bootstrap-select
+https://developer.snapappointments.com/bootstrap-select/
 #
 ###### Author: Norman Huth  
 https://normanhuth.com  
