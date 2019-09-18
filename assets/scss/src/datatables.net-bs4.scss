@@ -1,1 +1,14 @@
+@import "../variables";
 @import "../../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css";
+
+table.dataTable thead {
+    .sorting:before, .sorting_asc:before, .sorting_desc:before, .sorting_asc_disabled:before, .sorting_desc_disabled:before {
+        color: $fff-green1;
+    }
+    .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desc_disabled:after {
+        color: $fff-green1;
+    }
+    .sorting_asc:before, .sorting_desc:after {
+        color: $fff-green1;
+    }
+}
