@@ -31,6 +31,8 @@ $modal-content-border-color:                rgba($fff-green1, .125);
 
 $card-border-width:                         3px;
 
+$nav-tabs-border-width:                     1px;
+
 $enable-gradients:                          true;
 
 $hr-border-color:                           rgba($fff-green2, .75);
@@ -49,6 +51,12 @@ $thumbnail-border-color:                    $fff-green2;
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+
+.card {
+    .nav-tabs {
+        border-bottom: $card-border-width solid $nav-tabs-border-color;
+    }
+}
 
 html {
     position: relative;
