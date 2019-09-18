@@ -2,5 +2,5 @@
 A SASS Bootstrap 4 Basic Template for Fridays for Future sites
 
 
-Example Site
-http://fffbt4.kult13.de/
+Example Site:
+https://muetzeofficial.github.io/Fridays-for-Future-Bootstrap-4/
