@@ -9,11 +9,11 @@ https://muetzeofficial.github.io/Fridays-for-Future-Bootstrap-4/
 #
 ###### Instruction for editing
 * Make sure you have Node.js installed. https://nodejs.org
-* run `npm install` (in console, cmd, Phpstorm etc)
+* run `npm install` (console, cmd, Phpstorm etc in the repository folder)
 * The JS are located in the folder _assets/js/src_
 * The SASS are located in the folder _assets/scss/src_
-* To compile the JS use the task `gulp scripts` (in console, cmd, Phpstorm etc)
-* To compile the SASS use the task `gulp styles` (in console, cmd, Phpstorm etc)
+* To compile the JS use the task `gulp scripts`  (console, cmd, Phpstorm etc in the repository folder)
+* To compile the SASS use the task `gulp styles`  (console, cmd, Phpstorm etc in the repository folder)
 #
 ###### This package uses the following repositories:
 Bootstrap 4.3.1  
