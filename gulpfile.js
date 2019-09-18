@@ -1,11 +1,12 @@
-const gulp            = require('gulp');
-const sass            = require('gulp-sass');
-const postcss         = require('gulp-postcss');
-const jsminify        = require('gulp-terser');
-const flexbugsfixes   = require('postcss-flexbugs-fixes');
-const autoprefixer    = require('autoprefixer');
-const cssminify       = require('gulp-clean-css');
-const include         = require('gulp-include');
+const gulp              = require('gulp');
+const sass              = require('gulp-sass');
+const postcss           = require('gulp-postcss');
+const jsminify          = require('gulp-terser');
+const flexbugsfixes     = require('postcss-flexbugs-fixes');
+const autoprefixer      = require('autoprefixer');
+const cssminify         = require('gulp-clean-css');
+const include           = require('gulp-include');
+const { watch, series } = require('gulp');
 
 const processors = [
     flexbugsfixes,
@@ -25,19 +26,26 @@ const paths = {
     },
 };
 
-function styles() {
+function OnlyStyles() {
     return gulp.src(paths.styles.src)
         .pipe(sass())
         .pipe(postcss(processors))
         .pipe(cssminify())
         .pipe(gulp.dest(paths.styles.dest));
 }
-function scripts() {
+function OnlyJS() {
     return gulp.src(paths.scripts.src)
         .pipe(include())
         .pipe(jsminify())
         .pipe(gulp.dest(paths.scripts.dest));
 }
 
-exports.styles            = styles;
-exports.scripts           = scripts;
+exports.build = series(OnlyStyles, OnlyJS);
+
+exports.watch = function() {
+    watch(paths.styles.src, OnlyStyles);
+    watch(paths.scripts.src, series(OnlyJS));
+};
+
+exports.OnlyStyles            = OnlyStyles;
+exports.OnlyJS           = OnlyJS;
