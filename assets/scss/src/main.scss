@@ -1,5 +1,8 @@
 @import "../variables";
 
+$body-bg:                                   $white;
+$body-color:                                $gray-900;
+
 $theme-colors: (
     primary: $fff-green2
 );
@@ -215,6 +218,19 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
                 transform: rotate(0);
             }
         }
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.navbar-forced-expand {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
     }
 }
 

@@ -26,26 +26,47 @@ const paths = {
     },
 };
 
-function OnlyStyles() {
+function BuildCSS() {
     return gulp.src(paths.styles.src)
         .pipe(sass())
         .pipe(postcss(processors))
         .pipe(cssminify())
         .pipe(gulp.dest(paths.styles.dest));
 }
-function OnlyJS() {
+function DevCSS() {
+    return gulp.src(paths.styles.src)
+        .pipe(sass())
+        .pipe(postcss(processors))
+        .pipe(gulp.dest(paths.styles.dest));
+}
+function BuildJS() {
     return gulp.src(paths.scripts.src)
         .pipe(include())
         .pipe(jsminify())
         .pipe(gulp.dest(paths.scripts.dest));
 }
+function DevJS() {
+    return gulp.src(paths.scripts.src)
+        .pipe(include())
+        .pipe(gulp.dest(paths.scripts.dest));
+}
 
-exports.build = series(OnlyStyles, OnlyJS);
+exports.Build = series(BuildJS, BuildCSS);
 
-exports.watch = function() {
-    watch(paths.styles.src, OnlyStyles);
-    watch(paths.scripts.src, series(OnlyJS));
+exports.BuildCSS        = BuildCSS;
+exports.BuildJS         = BuildJS;
+
+exports.Dev             = series(DevJS, DevCSS);
+exports.DevCSS          = DevCSS;
+exports.DevJS           = DevJS;
+
+exports.Watch = function() {
+    watch(paths.styles.src, DevCSS);
+    watch(paths.scripts.src, DevJS);
 };
-
-exports.OnlyStyles            = OnlyStyles;
-exports.OnlyJS           = OnlyJS;
+exports.WatchCSS = function() {
+    watch(paths.styles.src, DevCSS);
+};
+exports.WatchJS = function() {
+    watch(paths.scripts.src, DevJS);
+};

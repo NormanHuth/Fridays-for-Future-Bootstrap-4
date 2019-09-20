@@ -12,10 +12,8 @@ You can find the Example site in the _docs_ folder
 * run `npm install` (console, cmd, Phpstorm etc in the repository folder)
 * The JS are located in the folder _assets/js/src_
 * The SASS are located in the folder _assets/scss/src_
-* To compile only the JS use the task `gulp OnlyStyles` (console, cmd, Phpstorm etc or NPM Script)
-* To compile only the SASS use the task `gulp OnlyStyles` (console, cmd, Phpstorm etc or NPM Script)
-* To compile the SASS and JS use the task `gulp build` (console, cmd, Phpstorm etc or NPM Script)
-* To compile and watch the SASS and JS use the task `gulp watch` (console, cmd, Phpstorm etc or NPM Script)
+* You can run the task to compile via Gulp or NPM (console, cmd, Phpstorm etc or NPM Script):  
+(`gulp Build`,`gulp Dev`,`gulp Watch`,`NPM run Build`,`NPM run Dev`,`NPM run Watch` etc)
 #
 ###### This package uses the following repositories:
 Bootstrap 4.3.1  
@@ -31,7 +29,7 @@ https://github.com/DataTables/Dist-DataTables
 https://datatables.net/
 
 Bootstrap-Select 1.13.10  
-https://github.com/snapappointments/bootstrap-select
+https://github.com/snapappointments/bootstrap-select  
 https://developer.snapappointments.com/bootstrap-select/
 #
 ###### Author: Norman Huth  

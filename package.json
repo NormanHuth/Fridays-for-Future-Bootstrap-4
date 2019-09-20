@@ -4,10 +4,15 @@
   "description": "A SASS Bootstrap 4 Template for Fridays for Future",
   "main": "index.js",
   "scripts": {
-    "OnlyStyles": "gulp OnlyStyles",
-    "OnlyJS": "gulp OnlyJS",
-    "watch": "gulp watch",
-    "build": "gulp build"
+    "Build": "gulp Build",
+    "BuildCSS": "gulp BuildCSS",
+    "BuildJS": "gulp BuildJS",
+    "Dev": "gulp Dev",
+    "DevCSS": "gulp DevCSS",
+    "DevJS": "gulp DevJS",
+    "Watch": "gulp Watch",
+    "WatchCSS": "gulp WatchCSS",
+    "WatchJS": "gulp WatchJS"
   },
   "repository": {
     "type": "git",
