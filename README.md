@@ -16,7 +16,8 @@ You can find the Example site in the _docs_ folder
 (`gulp Build`,`gulp Dev`,`gulp Watch`,`NPM run Build`,`NPM run Dev`,`NPM run Watch` etc)
 #
 ###### Install via NPM:
-`npm i fridays-for-future-bootstrap-4 --save` 
+`npm i fridays-for-future-bootstrap-4 --save`  
+You must create Your own JS.
 #
 ###### This package uses the following repositories:
 Bootstrap 4.3.1  
