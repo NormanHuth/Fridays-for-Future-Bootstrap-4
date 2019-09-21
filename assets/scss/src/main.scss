@@ -1,59 +1,76 @@
 @import "../variables";
 
-$body-bg:                                   $white;
-$body-color:                                $gray-900;
+$body-bg:                                   $white !default;
+$body-color:                                $gray-900 !default;
 
 $theme-colors: (
-    primary: $fff-green2
-);
+        primary: $fff-green2
+) !default;
 
-$link-color:                                $fff-green1;
-$font-size-base:                            1rem;
-$h1-font-size:                              $font-size-base * 1.9;
-$h2-font-size:                              $font-size-base * 1.75;
-$h3-font-size:                              $font-size-base * 1.6;
-$h4-font-size:                              $font-size-base * 1.45;
-$h5-font-size:                              $font-size-base * 1.3;
-$h6-font-size:                              $font-size-base * 1.15;
+$link-color:                                $fff-green1 !default;
+$font-size-base:                            1rem !default;
+$h1-font-size:                              $font-size-base * 1.9 !default;
+$h2-font-size:                              $font-size-base * 1.75 !default;
+$h3-font-size:                              $font-size-base * 1.6 !default;
+$h4-font-size:                              $font-size-base * 1.45 !default;
+$h5-font-size:                              $font-size-base * 1.3 !default;
+$h6-font-size:                              $font-size-base * 1.15 !default;
 
 // Forms
-$custom-control-indicator-checked-bg:       $fff-green1;
-$component-active-bg:                       $fff-green1;
-$custom-select-indicator-color:             $fff-green1;
-$custom-select-indicator-color:             $fff-green2;
+$custom-control-indicator-checked-bg:       $fff-green1 !default;
+$component-active-bg:                       $fff-green1 !default;
+$custom-select-indicator-color:             $fff-green1 !default;
+$custom-select-indicator-color:             $fff-green2 !default;
 /*
 Alternatives Forms
-$custom-control-indicator-checked-bg:           $white;
-$custom-control-indicator-checked-color:        $fff-green1;
-$custom-control-indicator-checked-border-color: $gray-400;
+$custom-control-indicator-checked-bg:           $white !default;
+$custom-control-indicator-checked-color:        $fff-green1 !default;
+$custom-control-indicator-checked-border-color: $gray-400 !default;
 */
 
-$card-border-color:                         $fff-green1;
-$list-group-border-color:                   rgba($fff-green1, .125);
-$modal-content-border-color:                rgba($fff-green1, .125);
+$card-border-color:                         $fff-green1 !default;
+$list-group-border-color:                   rgba($fff-green1, .125) !default;
+$modal-content-border-color:                rgba($fff-green1, .125) !default;
 
-$card-border-width:                         3px;
+$card-border-width:                         3px !default;
 
-$nav-tabs-border-width:                     1px;
+$nav-tabs-border-width:                     1px !default;
 
-$enable-gradients:                          true;
+$enable-gradients:                          true !default;
 
-$hr-border-color:                           rgba($fff-green2, .75);
-$hr-border-width:                           2px;
+$hr-border-color:                           rgba($fff-green2, .75) !default;
+$hr-border-width:                           2px !default;
 
-$modal-content-border-color:                rgba($fff-green2, .75);
-$modal-header-border-color:                 darken($fff-green2,75%);
-$modal-backdrop-bg:                         $fff-green2;
-$modal-backdrop-opacity:                    .7;
+$modal-content-border-color:                rgba($fff-green2, .75) !default;
+$modal-header-border-color:                 darken($fff-green2,75%) !default;
+$modal-backdrop-bg:                         $fff-green2 !default;
+$modal-backdrop-opacity:                    .7 !default;
 
-$thumbnail-border-color:                    $fff-green2;
+$thumbnail-border-color:                    $fff-green2 !default;
 
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+$webkit-scrollbar-width:                    15px !default;
+$webkit-scrollbar-track:                    $gray-200 !default;
+$webkit-scrollbar-thumb-bg:                 rgba($fff-green2, .75) !default;
+$webkit-scrollbar-thumb-border-left:        3px ridge  $gray-300 !default;
+$webkit-scrollbar-thumb-border-right:       3px ridge  $gray-300 !default;
+$webkit-scrollbar-thumb-bg-hover:           $fff-green1 !default;
 
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+$navbar-max-height:                         calc(100vh - 125px) !default;
+
+$btn_ttt-bottom:                            10px !default;
+$btn_ttt-right:                             10xp !default;
+$btn_ttt-z-index:                           99 !default;
+$btn_ttt-opacity:                           0.75 !default;
+$btn_ttt-filter:                            alpha(opacity=75) !default;
+
+$navbar-toggler-bg:                         $white !default;
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
 
 .card {
     .nav-tabs {
@@ -93,7 +110,7 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
 .navbar-expand-sm {
     @media (max-width: 576px) {
         .navbar-collapse {
-            max-height: calc(100vh - 125px);
+            max-height: $navbar-max-height;
             overflow-y: auto;
         }
     }
@@ -101,7 +118,7 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
 .navbar-expand-md {
     @media (max-width: 768px) {
         .navbar-collapse {
-            max-height: calc(100vh - 125px);
+            max-height: $navbar-max-height;
             overflow-y: auto;
         }
     }
@@ -109,7 +126,7 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
 .navbar-expand-lg {
     @media (max-width: 992px) {
         .navbar-collapse {
-            max-height: calc(100vh - 125px);
+            max-height: $navbar-max-height;
             overflow-y: auto;
         }
     }
@@ -117,7 +134,7 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
 .navbar-expand-xl {
     @media (max-width: 1200px) {
         .navbar-collapse {
-            max-height: calc(100vh - 125px);
+            max-height: $navbar-max-height;
             overflow-y: auto;
         }
     }
@@ -139,28 +156,28 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
 
 // Custom Scrollbar (not all Browsers)
 ::-webkit-scrollbar {
-    width: 15px;
+    width: $webkit-scrollbar-width;
 }
 ::-webkit-scrollbar-track {
-    background: $gray-200;
+    background: $webkit-scrollbar-track;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba($fff-green2, .75);
-    border-left: 3px ridge  $gray-300;
-    border-right: 3px ridge  $gray-300;
+    background: $webkit-scrollbar-thumb-bg;
+    border-left: $webkit-scrollbar-thumb-border-left;
+    border-right: $webkit-scrollbar-thumb-border-right;
     &:hover {
-        background: $fff-green1;
+        background: $webkit-scrollbar-thumb-bg-hover;
     }
 }
 
 #btn_ttt {
     display: none;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 99;
-    opacity: 0.75;
-    filter: alpha(opacity=75);
+    bottom: $btn_ttt-bottom;
+    right: $btn_ttt-right;
+    z-index: $btn_ttt-z-index;
+    opacity: $btn_ttt-opacity;
+    filter: $btn_ttt-filter;
 }
 
 // Can Remove, Only for Demo:
@@ -189,7 +206,7 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
         margin: 4px 0 4px 0;
         transition: all 0.2s;
         .navbar-dark & {
-            background: #ffffff;
+            background: $navbar-toggler-bg;
 
         }
         &:nth-of-type(1) {
@@ -234,8 +251,6 @@ a[href*="//"]:not(.no-external-icon):not(.btn):not([role=button]) {
     }
 }
 
-/*
-Optional: Create Social Buttons:
 .btn-facebook {
   @include button-variant($facebook, $facebook);
 }
@@ -251,4 +266,3 @@ Optional: Create Social Buttons:
 .btn-instagram {
   @include button-variant($instagram, $instagram);
 }
-*/
