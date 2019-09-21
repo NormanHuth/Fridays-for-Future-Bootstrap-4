@@ -15,6 +15,9 @@ You can find the Example site in the _docs_ folder
 * You can run the task to compile via Gulp or NPM (console, cmd, Phpstorm etc or NPM Script):  
 (`gulp Build`,`gulp Dev`,`gulp Watch`,`NPM run Build`,`NPM run Dev`,`NPM run Watch` etc)
 #
+###### Install via NPM:
+`npm i fridays-for-future-bootstrap-4 --save` 
+#
 ###### This package uses the following repositories:
 Bootstrap 4.3.1  
 https://github.com/twbs/bootstrap   
