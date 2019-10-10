@@ -39,3 +39,5 @@ https://developer.snapappointments.com/bootstrap-select/
 ###### Author: Norman Huth  
 https://normanhuth.com  
 https://normanhuth.de
+
+[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/muetze)
