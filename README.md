@@ -37,7 +37,9 @@ https://github.com/snapappointments/bootstrap-select
 https://developer.snapappointments.com/bootstrap-select/
 #
 ###### Author: Norman Huth  
-https://normanhuth.com  
-https://normanhuth.de
+[Website English](https://normanhuth.com)  
+[Website German](https://normanhuth.de)
+
+[Spend a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V35PNWK54DUES&source=url)  
 
 [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/muetze)
