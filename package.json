@@ -1,6 +1,6 @@
 {
   "name": "fridays-for-future-bootstrap-4",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A SASS Bootstrap 4 Template for Fridays for Future",
   "main": "index.js",
   "scripts": {
