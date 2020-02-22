@@ -5,6 +5,9 @@ A SASS Bootstrap 4 Basic Template for Fridays for Future sites
 ###### Example Site:  
 https://muetzeofficial.github.io/Fridays-for-Future-Bootstrap-4/
 
+if not work:
+https://normanhuth.github.io/Fridays-for-Future-Bootstrap-4/
+
 You can find the Example site in the _docs_ folder
 #
 ###### Instruction for editing
